@@ -39,7 +39,6 @@ Common properties :
 ## Compare IR and Database
 
 	   | DataBase  | IR	    |
------------|-----------|------------|
 Data | Sturctured | Unstructured |
 Fields | Clear semantics | No fileds |
 Queries | Defined (SQL) | Free text ("netural language") |
