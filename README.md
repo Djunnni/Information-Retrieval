@@ -9,7 +9,7 @@ This is Summary of IR(information-retrieval) in CBNU
 
 ## Professor 
 
-[JBNU - KyeongSoon Lee](http://imine.chonbuk.ac.kr/)
+[JBNU - KyungSoon Lee](http://imine.chonbuk.ac.kr/)
 
 ## Contact
 
