@@ -7,7 +7,7 @@ This is Summary of IR(information-retrieval) in JBNU
 - [ch1](https://github.com/Djunnni/Information-Retrieval/blob/master/ch1.md)
 - [ch2](https://github.com/Djunnni/Information-Retrieval/blob/master/ch2.md)
 - [ch3 - Web Crawler PDF(KOREAN)](https://github.com/Djunnni/Information-Retrieval/blob/master/ch3-hw1.pdf)
-- [ch4 - Web Crawler PDF(KOREAN)](https://github.com/Djunnni/Information-Retrieval/blob/master/ch4-hw2.pdf)
+- [ch4 - Ranking Algorithm PDF(KOREAN)](https://github.com/Djunnni/Information-Retrieval/blob/master/ch4-hw2.pdf)
 - [ch7](https://github.com/Djunnni/Information-Retrieval/blob/master/ch7.md)
 
 ## Professor 
