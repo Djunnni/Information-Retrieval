@@ -1,0 +1,36 @@
+{
+	"nike" : {
+		"properties" : {
+			"opentime" : {
+				"type" : "date",
+				"format" : "yyyy-MM-dd H:m:s"
+			},
+			"link" : {
+				"type" : "text"
+			},
+			"shoes_img" : {
+				"type" : "text"
+			},
+			"shoes_type" : {
+				"type" : "text"
+			},
+			"shoes_title" : {
+				"type" : "text"
+			},
+			"shoes_price" : {
+				"type" : "long"
+			},
+			"shoes_opendate" : {
+				"type" : "text"
+			},
+			"shoes_desc" : {
+				"type" : "text",
+				"analyzer" : "nori"
+			},
+			"shoes_draw" : {
+				"type" : "boolean",
+				"boost" : 3
+			}
+		}
+	}
+}

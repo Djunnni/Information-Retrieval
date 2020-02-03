@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="colorlib.com">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,800" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <style>
+      h2, h3 {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="s006">
+      <h1>출시예정 나이키 신발 검색</h1>
+      <form >
+        <fieldset>
+          <legend>어떤 신발을 찾나요?</legend>
+          <div class="inner-form">
+            <div class="input-field">
+              <button class="btn-search" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                </svg>
+              </button>
+              <input id="search" name="search" type="text" placeholder="" value="" />
+            </div>
+          </div>
+          <div class="suggestion-wrap">
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <div id="items">
+
+    </div>
+  </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+  <script>
+    var btn = document.querySelector(".btn-search");
+    var xhr = new XMLHttpRequest();
+    btn.addEventListener('click',function(){
+      $('#items').empty();
+      var value = document.querySelector("#search").value;
+     
+      xhr.onload = function () {
+          // do something to response
+          var list = JSON.parse(this.responseText);
+          console.log(list);
+          for( x in list){
+            $('#items').append('<div><h2>'+list[x]._source.shoes_title+'</h2><br><h3>'+ list[x]._source.shoes_type+'</h3><br>가격 : '+list[x]._source.shoes_price+'<br>'+list[x]._source.shoes_desc+'</div><hr>');
+          }
+      };
+      xhr.open('POST','/data',true);
+      xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+      xhr.send('search='+value);
+    })
+    
+  </script>
+</html>
